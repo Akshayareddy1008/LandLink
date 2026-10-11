@@ -1,0 +1,739 @@
+
+/* ===== LANDLINK GLOBAL APP STYLES ===== */
+
+#root {
+  min-height: 100vh;
+}
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #1c3028;
+  background: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ===== HEADER ===== */
+
+header,
+.navbar,
+nav {
+  font-family: 'DM Sans', sans-serif;
+}
+
+header {
+  width: 100%;
+}
+
+header a,
+nav a {
+  transition: color 0.2s ease;
+}
+
+header a:hover,
+nav a:hover {
+  color: #29965b;
+}
+
+/* ===== HOMEPAGE SECTIONS ===== */
+
+.hero {
+  min-height: 470px;
+  padding: 85px 7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #ffffff;
+}
+
+.hero h1 {
+  max-width: 760px;
+  margin: 20px 0;
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(38px, 5vw, 64px);
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -2px;
+}
+
+.hero p {
+  max-width: 680px;
+  color: #647168;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.eyebrow {
+  color: #27834b;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.section-text {
+  color: #6b786f;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* ===== PORTAL SELECTION ===== */
+
+.portal-section,
+#portals {
+  padding: 75px 7%;
+  background: #f4f8f2;
+  text-align: center;
+}
+
+.portal-section h2,
+#portals h2,
+.about h2 {
+  margin: 20px 0;
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(30px, 4vw, 46px);
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+
+.portal-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 26px;
+  max-width: 1050px;
+  margin: 45px auto 0;
+  text-align: left;
+}
+
+.portal-card {
+  padding: 32px;
+  background: #ffffff;
+  border: 1px solid #e2eae1;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(27, 58, 37, 0.04);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.portal-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(27, 58, 37, 0.09);
+}
+
+.portal-card h3 {
+  margin: 15px 0 10px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 23px;
+}
+
+.portal-card p {
+  color: #6b786f;
+  line-height: 1.8;
+}
+
+/* ===== BUTTONS ===== */
+
+.portal-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 48px;
+  padding: 13px 20px;
+  color: #ffffff;
+  background: #247d49;
+  border: 1px solid #247d49;
+  border-radius: 9px;
+  font-weight: 700;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.portal-button:hover {
+  background: #19683a;
+  transform: translateY(-1px);
+}
+
+.secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 18px;
+  color: #247d49;
+  background: #ffffff;
+  border: 1px solid #dce7dd;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.secondary-button:hover {
+  background: #eaf5ec;
+}
+
+/* ===== BUYER AND SELLER LOGIN / REGISTER ===== */
+
+.portals {
+  min-height: 100vh;
+  padding: 45px 7% 70px;
+  background: #f4f8f2;
+}
+
+.portals > .eyebrow {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.portals > h2 {
+  margin: 15px 0;
+  color: #1c3028;
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(30px, 4vw, 42px);
+  font-weight: 800;
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+.portals > .section-text {
+  text-align: center;
+}
+
+.portals form {
+  width: 100%;
+  max-width: 440px !important;
+  margin: 30px auto !important;
+  padding: 32px !important;
+  background: #ffffff;
+  border: 1px solid #e3ebe3 !important;
+  border-radius: 18px !important;
+  box-shadow: 0 15px 45px rgba(27, 58, 37, 0.07);
+}
+
+.portals form label {
+  display: block;
+  margin-bottom: 7px;
+  color: #344b3b;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.portals form input {
+  display: block;
+  width: 100%;
+  min-height: 46px;
+  margin: 8px 0 20px !important;
+  padding: 12px 14px !important;
+  color: #1c3028;
+  background: #ffffff;
+  border: 1px solid #dce5dc !important;
+  border-radius: 8px !important;
+  font-size: 14px !important;
+  outline: none;
+}
+
+.portals form input:focus {
+  border-color: #29965b !important;
+  box-shadow: 0 0 0 3px rgba(41, 150, 91, 0.12);
+}
+
+.portals form input::placeholder {
+  color: #a0aaa2;
+}
+
+.portals form .portal-button {
+  margin-top: 5px;
+}
+
+.portals form p {
+  color: #6b786f;
+  line-height: 1.8;
+}
+
+/* ===== ABOUT SECTION ===== */
+
+.about {
+  padding: 75px 7%;
+  background: #ffffff;
+}
+
+.about h2 {
+  color: #1c3028;
+}
+
+.about p {
+  max-width: 760px;
+  color: #6b786f;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+@media (max-width: 700px) {
+  .hero {
+    min-height: 400px;
+    padding: 60px 6%;
+  }
+
+  .hero h1 {
+    letter-spacing: -1px;
+  }
+
+  .portal-section,
+  #portals,
+  .about {
+    padding: 55px 6%;
+  }
+
+  .portal-cards {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .portal-card {
+    padding: 25px;
+  }
+
+  .portals {
+    padding: 30px 5%;
+  }
+
+  .portals form {
+    padding: 24px !important;
+  }
+}
+
+/* ===== LANDLINK HOMEPAGE RESTORE ===== */
+
+.app {
+  width: 100%;
+  overflow: hidden;
+  color: #1c3028;
+  background: #fff;
+}
+
+/* Header */
+.navbar {
+  min-height: 88px;
+  padding: 20px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  background: #fff;
+}
+
+.logo {
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  white-space: nowrap;
+}
+
+.logo span,
+footer h2 span {
+  color: #29965b;
+}
+
+.navbar nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.navbar nav a {
+  color: #425449;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.navbar nav a:hover {
+  color: #29965b;
+}
+
+.nav-button,
+.primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 22px;
+  color: #fff;
+  background: #247d49;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: background .2s, transform .2s;
+}
+
+.nav-button:hover,
+.primary-button:hover {
+  color: #fff;
+  background: #19683a;
+  transform: translateY(-2px);
+}
+
+/* Hero */
+.hero {
+  min-height: 590px;
+  padding: 65px 7%;
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  align-items: center;
+  gap: 55px;
+  background: #fff;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content .eyebrow {
+  margin-bottom: 24px;
+}
+
+.hero-content h2 {
+  margin: 0 0 22px;
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(40px, 4.5vw, 60px);
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -2px;
+}
+
+.hero-content h2 span {
+  color: #27834b;
+}
+
+.hero-text {
+  margin: 0 0 28px;
+  color: #68776d;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.primary-button {
+  min-height: 49px;
+}
+
+.features {
+  margin-top: 27px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+}
+
+.features span {
+  color: #425449;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Hero image panel */
+.hero-image {
+  min-height: 390px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  border-radius: 22px;
+  background-color: #dfe9d8;
+  background-image:
+    linear-gradient(
+      0deg,
+      rgba(15, 42, 26, .65),
+      rgba(15, 42, 26, 0) 60%
+    ),
+    url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=85');
+  background-size: cover;
+  background-position: center;
+}
+
+.image-overlay {
+  width: 100%;
+  padding: 28px;
+}
+
+.image-overlay p {
+  margin: 0;
+  color: #fff;
+  font-family: 'Manrope', sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+/* Portal section */
+.portals {
+  min-height: 400px;
+  padding: 75px 7%;
+  background: #f4f8f2;
+  text-align: center;
+}
+
+.portals > .eyebrow {
+  margin: 0 0 20px;
+}
+
+.portals > h2 {
+  margin: 0 0 20px;
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(32px, 4vw, 46px);
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+
+.section-text {
+  color: #68776d;
+  line-height: 1.8;
+}
+
+.portal-cards {
+  max-width: 1050px;
+  margin: 42px auto 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 26px;
+  text-align: left;
+}
+
+.portal-card {
+  padding: 32px;
+  background: #fff;
+  border: 1px solid #e2eae1;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(27, 58, 37, .05);
+}
+
+.portal-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #247d49;
+  background: #eaf5ec;
+  border-radius: 12px;
+  font-size: 28px;
+}
+
+.portal-card h3 {
+  margin: 20px 0 12px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 23px;
+}
+
+.portal-card p,
+.portal-card li {
+  color: #68776d;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.portal-card ul {
+  margin: 20px 0 25px;
+  padding-left: 20px;
+}
+
+.portal-button {
+  width: 100%;
+  min-height: 48px;
+  padding: 13px 20px;
+  color: #fff;
+  background: #247d49;
+  border: 1px solid #247d49;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.portal-button:hover {
+  background: #19683a;
+}
+
+/* About section */
+.about {
+  padding: 80px 7%;
+  background: #fff;
+  text-align: center;
+}
+
+.about > h2 {
+  margin: 15px 0 40px;
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(30px, 4vw, 44px);
+  letter-spacing: -1px;
+}
+
+.about-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  text-align: left;
+}
+
+.about-grid > div {
+  padding: 27px;
+  background: #f6f9f4;
+  border: 1px solid #e7eee5;
+  border-radius: 14px;
+}
+
+.about-grid h3 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 18px;
+}
+
+.about-grid p,
+.disclaimer {
+  color: #68776d;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.disclaimer {
+  margin: 35px auto 0;
+}
+
+/* Footer */
+footer {
+  padding: 40px 7%;
+  color: #dce8df;
+  background: #193629;
+  text-align: center;
+}
+
+footer h2 {
+  margin: 0 0 12px;
+  color: #fff;
+  font-family: 'Manrope', sans-serif;
+  font-size: 28px;
+}
+
+footer p {
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* Buyer and seller login pages */
+.portals form {
+  width: 100%;
+  max-width: 440px;
+  margin: 30px auto;
+  padding: 32px;
+  background: #fff;
+  border: 1px solid #e2eae1;
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(27, 58, 37, .06);
+  text-align: left;
+}
+
+.portals form label {
+  display: block;
+  margin-bottom: 7px;
+  color: #344b3b;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.portals form input {
+  display: block;
+  width: 100%;
+  min-height: 45px;
+  margin: 8px 0 20px;
+  padding: 12px;
+  border: 1px solid #dce5dc;
+  border-radius: 8px;
+}
+
+.portals form input:focus {
+  outline: 2px solid #c5e5cd;
+  border-color: #29965b;
+}
+
+.portals > .secondary-button {
+  display: inline-flex;
+}
+
+/* Mobile layout */
+@media (max-width: 800px) {
+  .navbar {
+    padding: 18px 5%;
+    flex-wrap: wrap;
+  }
+
+  .navbar nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    gap: 22px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 55px 6%;
+    gap: 35px;
+  }
+
+  .hero-image {
+    min-height: 300px;
+  }
+
+  .portal-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  .logo {
+    font-size: 25px;
+  }
+
+  .nav-button {
+    padding: 10px 13px;
+    font-size: 12px;
+  }
+
+  .navbar nav {
+    gap: 15px;
+  }
+
+  .navbar nav a {
+    font-size: 12px;
+  }
+
+  .hero-content h2 {
+    font-size: 38px;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+
+  .portal-card {
+    padding: 23px;
+  }
+}
